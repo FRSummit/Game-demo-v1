@@ -22,6 +22,7 @@ export default {
     methods: {
     },
     created() {
+        console.log('Created')
     },
     mounted() {
     }
