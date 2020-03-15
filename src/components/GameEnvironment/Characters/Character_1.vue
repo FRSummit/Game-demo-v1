@@ -1,13 +1,13 @@
 <template>
-    <div class="stage-1">
-        <h1>Stage 1</h1>
+    <div class="character-1">
+        <h1>Character 1</h1>
     </div>
 </template>
 
 <style scoped>
-.stage-1 {
+.character-1 {
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0px;
 }
 </style>

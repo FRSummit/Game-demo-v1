@@ -1,20 +1,38 @@
 <template>
-    <div class="game">
-        <div class="exit"><v-btn to="/exit-to-menu" class="menu">Exit to Menu</v-btn></div>
+    <div class="game" id="game">
+        <div class="exit"><v-btn to="/" class="menu">Exit to Menu</v-btn></div>
         <Stage1/>
+        <Background1/>
+        <Character1/>
     </div>
 </template>
 
 <script>
 import Stage1 from '../components/GameEnvironment/Stages/Stage_1'
+import Background1 from '../components/GameEnvironment/Backgrounds/Background_1'
+import Character1 from '../components/GameEnvironment/Characters/Character_1'
+// import $ from 'jquery'
+
 export default {
     components: {
         Stage1,
+        Background1,
+        Character1,
+    },
+    methods: {
+    },
+    created() {
+    },
+    mounted() {
     }
 }
 </script>
 
 <style scoped>
+.game {
+  position: relative;
+  height: 500px;
+}
 .exit a {
   background-color: #380101 !important;
   border: 1px solid #272727;
