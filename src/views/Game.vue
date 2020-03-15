@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import Stage1 from '../components/GameEnvironment/Stages/Stage_1'
-import Background1 from '../components/GameEnvironment/Backgrounds/Background_1'
-import Character1 from '../components/GameEnvironment/Characters/Character_1'
-// import $ from 'jquery'
+import Stage1 from '../components/GameEnvironment/Environment1/Stages/Stage_1'
+import Background1 from '../components/GameEnvironment/Environment1/Backgrounds/Background_1'
+import Character1 from '../components/GameEnvironment/Environment1/Characters/Character_1'
+import $ from 'jquery'
 
 export default {
     components: {
@@ -22,9 +22,9 @@ export default {
     methods: {
     },
     created() {
-        console.log('Created')
     },
     mounted() {
+        $('.game').css('height', $('body').height())
     }
 }
 </script>
@@ -33,6 +33,7 @@ export default {
 .game {
   position: relative;
   height: 500px;
+  background: #BDF2FD;
 }
 .exit a {
   background-color: #380101 !important;
@@ -41,10 +42,10 @@ export default {
   font-size: 16px;
   letter-spacing: 2px;
   color: #FFF;
-  position: absolute;
-  right: 0;
   text-transform: none;
   padding: 0 6px !important;
   height: 24px !important;
+  position: absolute;
+  right: 0;
 }
 </style>
