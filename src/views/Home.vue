@@ -1,18 +1,45 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <div class="menu-section">
+        <div><img src="../assets/images/bullet-icon.png"/><v-btn class="menu">New Game</v-btn></div>
+        <div><img src="../assets/images/bullet-icon.png"/><v-btn class="menu">Change Environment</v-btn></div>
+        <div><img src="../assets/images/bullet-icon.png"/><v-btn class="menu">Change Character</v-btn></div>
+        <div><img src="../assets/images/bullet-icon.png"/><v-btn class="menu">Change Background</v-btn></div>
+        <div><img src="../assets/images/bullet-icon.png"/><v-btn class="menu">Highest Score</v-btn></div>
+        <div><img src="../assets/images/bullet-icon.png"/><v-btn class="menu">Exit</v-btn></div>
+      </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
   }
 }
 </script>
+
+<style scoped>
+.menu-section {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+.menu-section button {
+  width: 80%;
+  background-color: #5a270f !important;
+  border: 1px solid #272727;
+  margin: 4px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #FFF;
+  display: inline-block;
+  font-weight: bold;
+}
+.menu-section img {
+  display: inline-block;
+  width: 36px;
+  vertical-align: middle;
+}
+</style>
