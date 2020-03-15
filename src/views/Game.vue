@@ -1,12 +1,12 @@
 <template>
     <div class="game">
-        <div class="exit"><v-btn to="/exit-to-menu" class="menu">To Menu</v-btn></div>
+        <div class="exit"><v-btn to="/exit-to-menu" class="menu">Exit to Menu</v-btn></div>
         <Stage1/>
     </div>
 </template>
 
 <script>
-import Stage1 from '../components/GameEnvironment/Stage1'
+import Stage1 from '../components/GameEnvironment/Stages/Stage_1'
 export default {
     components: {
         Stage1,
