@@ -12,10 +12,16 @@
         <img class="home-first-floor-img" src="../../../../assets/images/floor-1.png" alt="">
         <img class="home-second-floor-img" src="../../../../assets/images/floor-2.png" alt="">
         <img class="home-third-floor-img" src="../../../../assets/images/floor-3.png" alt="">
+        <img class="home-first-floor-stair" src="../../../../assets/images/stairs.png" alt="">
+        <img class="home-second-floor-stair1" src="../../../../assets/images/stairs.png" alt="">
+        <img class="home-second-floor-stair2" src="../../../../assets/images/stairs.png" alt="">
+        <img class="home-third-floor-stair" src="../../../../assets/images/stairs.png" alt="">
         <div class="outside-stage-1"></div>
         <div class="outside-stage-2"></div>
         <img class="outside-stage-img-1" src="../../../../assets/images/outside-stage.png" alt="">
         <img class="outside-stage-img-2" src="../../../../assets/images/outside-stage.png" alt="">
+        <img class="outside-stair1" src="../../../../assets/images/stairs.png" alt="">
+        <img class="outside-stair2" src="../../../../assets/images/stairs.png" alt="">
     </div>
 </template>
 
@@ -30,6 +36,7 @@
     position: absolute;
     bottom: 18%;
     width: 15%;
+    z-index: 3;
 }
 .soil-img {
     position: absolute;
@@ -75,7 +82,7 @@
     right: 0;
     width: 65%;
     height: 25%;
-    z-index: 2;
+    z-index: 3;
 }
 /* .home-second-floor {
     border-bottom: 2px solid #222;
@@ -106,6 +113,38 @@
     height: 25%;
     z-index: 2;
 }
+.home-first-floor-stair{
+    position: absolute;
+    width: 4%;
+    height: 25%;
+    bottom: 20%;
+    right: 55%;
+    z-index: 3;
+}
+.home-second-floor-stair1{
+    position: absolute;
+    width: 4%;
+    height: 27%;
+    bottom: 40%;
+    right: 15%;
+    z-index: 2;
+}
+.home-second-floor-stair2{
+    position: absolute;
+    width: 4%;
+    height: 27%;
+    bottom: 40%;
+    right: 40%;
+    z-index: 2;
+}
+.home-third-floor-stair{
+    position: absolute;
+    width: 4%;
+    height: 25%;
+    bottom: 65%;
+    right: 5%;
+    z-index: 2;
+}
 /* .outside-stage-1 {
     border-bottom: 2px solid #222;
     position: absolute;
@@ -117,8 +156,9 @@
     position: absolute;
     bottom: 40%;
     left: 0;
-    width: 15%;
+    width: 10%;
     height: 15%;
+    z-index: 2;
 }
 /* .outside-stage-2 {
     border-bottom: 2px solid #222;
@@ -131,7 +171,22 @@
     position: absolute;
     bottom: 60%;
     left: 0;
-    width: 20%;
+    width: 15%;
     height: 15%;
+}
+.outside-stair1 {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 4%;
+    height: 35%;
+    z-index: 2;
+}
+.outside-stair2 {
+    position: absolute;
+    bottom: 50%;
+    left: 3%;
+    width: 4%;
+    height: 25%;
 }
 </style>
