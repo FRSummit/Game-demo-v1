@@ -34,6 +34,7 @@ export default {
   position: relative;
   height: 500px;
   background: #BDF2FD;
+  margin-top: -48px;
 }
 .exit a {
   background-color: #380101 !important;
