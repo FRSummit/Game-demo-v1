@@ -154,7 +154,7 @@
 .home-third-floor-stair{
     position: absolute;
     width: 4%;
-    height: 25%;
+    height: 27%;
     bottom: 65%;
     right: 5%;
     z-index: 2;

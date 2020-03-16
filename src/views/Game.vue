@@ -3,7 +3,7 @@
         <div class="exit" @click="exitClick"><v-btn to="/" class="menu">Exit to Menu</v-btn></div>
         <Stage1/>
         <Background1/>
-        <Character1/>
+        <Character1 id="character"/>
     </div>
 </template>
 
@@ -22,14 +22,23 @@ export default {
     methods: {
         exitClick() {
             $('.navbar').css('display', 'block')
-        }
+        },
+        // goRight(e) {
+        //     let charPosition_X = $(window).height() - $('#character').height();
+        //     console.log(charPosition_X)
+        //     if(String.fromCharCode(e.keyCode) === 'W' || String.fromCharCode(e.keyCode) === 'w') {
+        //         console.log('I am W/w')
+        //         document.getElementById('.character').style.bottom = charPosition_X + 300 + 'px'
+        //     }
+        // }
     },
     created() {
         $('.navbar').css('display', 'none')
     },
     mounted() {
-        // $('.game').css('height', $('body').height())
-        // $('.game').css('height', screen.height)
+        // window.addEventListener("keypress", function(e) {
+        //     this.goRight(e)
+        // }.bind(this));
     }
 }
 </script>
