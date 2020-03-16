@@ -29,12 +29,12 @@
 </template>
 
 <style scoped>
-.ground {
+/* .ground {
     border-bottom: 2px solid #222;
     position: absolute;
     bottom: 20%;
     width: 100%;
-}
+} */
 .grass-img {
     position: absolute;
     bottom: 18%;
@@ -52,7 +52,7 @@
     bottom: 0;
     left: 15%;
     width: 20%;
-    height: 21%;
+    height: 20%;
     z-index: 3;
 }
 /* .ground-divider-1 {
