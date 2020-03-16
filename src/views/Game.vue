@@ -11,7 +11,7 @@
 import Stage1 from '../components/GameEnvironment/Environment1/Stages/Stage_1'
 import Background1 from '../components/GameEnvironment/Environment1/Backgrounds/Background_1'
 import Character1 from '../components/GameEnvironment/Environment1/Characters/Character_1'
-import $ from 'jquery'
+// import $ from 'jquery'
 
 export default {
     components: {
@@ -24,15 +24,15 @@ export default {
     created() {
     },
     mounted() {
-        $('.game').css('height', $('body').height())
+        // $('.game').css('height', $('body').height())
     }
 }
 </script>
 
 <style scoped>
 .game {
-  position: relative;
-  height: 500px;
+  /* position: relative;
+  height: 500px; */
   background: #BDF2FD;
   margin-top: -48px;
 }
