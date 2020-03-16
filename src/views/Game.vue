@@ -1,6 +1,6 @@
 <template>
     <div class="game" id="game">
-        <div class="exit"><v-btn to="/" class="menu">Exit to Menu</v-btn></div>
+        <div class="exit" @click="exitClick"><v-btn to="/" class="menu">Exit to Menu</v-btn></div>
         <Stage1/>
         <Background1/>
         <Character1/>
@@ -11,7 +11,7 @@
 import Stage1 from '../components/GameEnvironment/Environment1/Stages/Stage_1'
 import Background1 from '../components/GameEnvironment/Environment1/Backgrounds/Background_1'
 import Character1 from '../components/GameEnvironment/Environment1/Characters/Character_1'
-// import $ from 'jquery'
+import $ from 'jquery'
 
 export default {
     components: {
@@ -20,8 +20,12 @@ export default {
         Character1,
     },
     methods: {
+        exitClick() {
+            $('.navbar').css('display', 'block')
+        }
     },
     created() {
+        $('.navbar').css('display', 'none')
     },
     mounted() {
         // $('.game').css('height', $('body').height())
@@ -34,7 +38,7 @@ export default {
   /* position: relative;
   height: 500px; */
   background: #BDF2FD;
-  margin-top: -48px;
+  /* margin-top: -48px; */
 }
 .exit a {
   background-color: #380101 !important;
