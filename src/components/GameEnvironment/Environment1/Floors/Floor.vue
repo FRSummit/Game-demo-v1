@@ -1,6 +1,9 @@
 <template>
     <div class="floors">
         <div class="ground"></div>
+        <img class="underground" src="../../../../assets/images/underground.png" alt="">
+        <img class="underground-stair1" src="../../../../assets/images/stairs.png" alt="">
+        <img class="underground-stair2" src="../../../../assets/images/stairs.png" alt="">
         <img class="grass-img" src="../../../../assets/images/grass.png" alt="">
         <img class="soil-img" src="../../../../assets/images/soil.png" alt="">
         <img class="water-pool-img" src="../../../../assets/images/water-pool-3.png" alt="">
@@ -188,5 +191,28 @@
     left: 3%;
     width: 4%;
     height: 25%;
+}
+.underground {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 65%;
+    height: 20%;
+}
+.underground-stair1 {
+    position: absolute;
+    width: 4%;
+    height: 22%;
+    bottom: 0%;
+    right: 17%;
+    z-index: 4;
+}
+.underground-stair2 {
+    position: absolute;
+    width: 4%;
+    height: 22%;
+    bottom: 0%;
+    right: 50%;
+    z-index: 4;
 }
 </style>
