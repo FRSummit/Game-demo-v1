@@ -29,7 +29,6 @@ export default {
     },
     mounted() {
         // $('.game').css('height', $('body').height())
-        console.log(screen.height)
         // $('.game').css('height', screen.height)
     }
 }
@@ -53,6 +52,7 @@ export default {
   padding: 0 6px !important;
   height: 24px !important;
   position: absolute;
-  right: 0;
+  left: 0;
+  z-index: 10;
 }
 </style>
