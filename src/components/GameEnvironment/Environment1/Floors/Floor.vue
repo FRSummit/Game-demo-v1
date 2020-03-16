@@ -1,6 +1,7 @@
 <template>
     <div class="floors">
         <div class="ground"></div>
+        <img class="background-img" src="../../../../assets/images/back2.png" alt="">
         <img class="underground" src="../../../../assets/images/underground.png" alt="">
         <img class="underground-stair1" src="../../../../assets/images/stairs.png" alt="">
         <img class="underground-stair2" src="../../../../assets/images/stairs.png" alt="">
@@ -25,6 +26,7 @@
         <img class="outside-stage-img-2" src="../../../../assets/images/outside-stage.png" alt="">
         <img class="outside-stair1" src="../../../../assets/images/stairs.png" alt="">
         <img class="outside-stair2" src="../../../../assets/images/stairs.png" alt="">
+        <img class="tree" src="../../../../assets/images/tree.png" alt="">
     </div>
 </template>
 
@@ -35,17 +37,26 @@
     bottom: 20%;
     width: 100%;
 } */
+.background-img {
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    z-index: -1;
+    opacity: 0.2;
+}
 .grass-img {
     position: absolute;
     bottom: 18%;
     width: 15%;
     z-index: 3;
+    height: 5%;
 }
 .soil-img {
     position: absolute;
     bottom: 0;
     width: 15%;
     height: 18%;
+    z-index: 1;
 }
 .water-pool-img {
     position: absolute;
@@ -161,7 +172,7 @@
     left: 0;
     width: 10%;
     height: 15%;
-    z-index: 2;
+    z-index: 3;
 }
 /* .outside-stage-2 {
     border-bottom: 2px solid #222;
@@ -176,6 +187,7 @@
     left: 0;
     width: 15%;
     height: 15%;
+    z-index: 2;
 }
 .outside-stair1 {
     position: absolute;
@@ -183,7 +195,7 @@
     left: 0;
     width: 4%;
     height: 35%;
-    z-index: 2;
+    z-index: 3;
 }
 .outside-stair2 {
     position: absolute;
@@ -191,6 +203,7 @@
     left: 3%;
     width: 4%;
     height: 25%;
+    z-index: 2;
 }
 .underground {
     position: absolute;
@@ -214,5 +227,12 @@
     bottom: 0%;
     right: 50%;
     z-index: 4;
+}
+.tree {
+    position: absolute;
+    left: -7%;
+    bottom: 15%;
+    width: 30%;
+    height: 80%;
 }
 </style>

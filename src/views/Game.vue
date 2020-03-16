@@ -29,6 +29,8 @@ export default {
     },
     mounted() {
         // $('.game').css('height', $('body').height())
+        console.log(screen.height)
+        // $('.game').css('height', screen.height)
     }
 }
 </script>
