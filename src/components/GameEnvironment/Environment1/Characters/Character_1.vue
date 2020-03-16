@@ -1,6 +1,6 @@
 <template>
     <div class="character-1">
-        <img class="char1" @click="goRight" src="../../../../assets/images/fire-char-1.png" alt="">
+        <img class="char1" src="../../../../assets/images/fire-char-1.png" alt="">
     </div>
 </template>
 
@@ -9,27 +9,29 @@ import $ from 'jquery'
 
 export default {
     created() {
-        console.log('working')
-        let char1 = $('.char1').position()
-        console.log(char1)
+        // console.log('working')
+        // let char1 = $('.char1').position()
+        // console.log(char1)
+        var bottom = $(window).height() - $('.char1').height();
+        console.log(bottom)
     },
     mounted() {
         window.addEventListener("keypress", function(e) {
-            console.log(String.fromCharCode(e.keyCode));
+            // console.log(String.fromCharCode(e.keyCode));
+            // console.log(e.keyCode);
+            // if(e.key == "Enter") {
+            //     console.log("enter pressed!");
+            // }
+            this.goRight(e)
         }.bind(this));
     },
     methods: {
-        goRight() {
-            console.log('click')
-            // $(document).keypress(function (eventObject) {
-                // console.log('eventObject.keyCode');
-            // });
-            // let top = document.querySelector('char1').offsetTop
-            // console.log(top)
-            // $('char1').css()
-            let char1 = parseInt(document.querySelector('.char1').style.bottom)
-            // document.querySelector('.char1').style.left = char1 + 'px';
-            console.log(char1)
+        goRight(e) {
+            console.log(String.fromCharCode(e.keyCode));
+
+            if(String.fromCharCode(e.keyCode) === 'W' || String.fromCharCode(e.keyCode) === 'w') {
+                console.log('I am W/w')
+            }
         }
         
     }
