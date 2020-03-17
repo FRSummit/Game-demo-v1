@@ -5,15 +5,15 @@
 </template>
 
 <script>
-import $ from 'jquery'
+// import $ from 'jquery'
 
 export default {
     created() {
         // console.log('working')
         // let char1 = $('.char1').position()
         // console.log(char1)
-        var bottom = $(window).height() - $('.character-1').height();
-        console.log(bottom)
+        // var bottom = $(window).height() - $('.character-1').height();
+        // console.log(bottom)
     },
     mounted() {
         window.addEventListener("keypress", function(e) {
@@ -34,11 +34,11 @@ export default {
             // console.log(String.fromCharCode(e.keyCode));
 
             if(String.fromCharCode(e.keyCode) === 'W' || String.fromCharCode(e.keyCode) === 'w') {
-                console.log('I am W/w')
+                // console.log('I am W/w')
                 document.querySelector('.character-1').style.bottom += 100 + 'px'
             }
             if(String.fromCharCode(e.keyCode) === 'S' || String.fromCharCode(e.keyCode) === 's') {
-                console.log('I am S')
+                // console.log('I am S')
                 document.querySelector('.character-1').style.bottom += 200 + 'px'
             }
         }
