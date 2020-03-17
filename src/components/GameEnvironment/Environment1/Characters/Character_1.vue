@@ -13,7 +13,11 @@ export default {
         // let char1 = $('.char1').position()
         // console.log(char1)
         // var bottom = $(window).height() - $('.character-1').height();
-        // console.log(bottom)
+        // console.log(bottom) 
+         
+        // naprosin+ 500mg 1+0+1
+        // sonix 20g 30 piece 1+0+1 before eat
+        // poralcal-b 30 piece -> regular 1
     },
     mounted() {
         window.addEventListener("keypress", function(e) {

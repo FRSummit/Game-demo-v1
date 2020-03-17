@@ -16,9 +16,14 @@ const routes = [
     component: () => import('../views/About.vue')
   },
   {
-    path: '/new-game',
+    path: '/game',
     name: 'Game',
     component: () => import('../views/Game.vue')
+  },
+  {
+    path: '/new-game',
+    name: 'Game 1',
+    component: () => import('../views/Game1.vue')
   },
   {
     path: '/high-score',

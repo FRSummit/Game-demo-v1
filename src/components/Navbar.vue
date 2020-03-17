@@ -2,13 +2,14 @@
   <div class="navbar">
     <v-app-bar color="deep-purple accent-4 v-app-bar" dense dark>
       <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
-      <v-toolbar-title class="title">Game Demo</v-toolbar-title>
+      <v-toolbar-title class="title">FRS-HSR</v-toolbar-title>
       
       <v-spacer/>
 
       <div class="menu-section">
         <v-btn to="/" class="menu"><span>Home</span></v-btn>
         <v-btn to="/about" class="menu"><span>About</span></v-btn>
+        <v-btn to="/game" class="menu"><span>Game</span></v-btn>
       </div>
 
     </v-app-bar>

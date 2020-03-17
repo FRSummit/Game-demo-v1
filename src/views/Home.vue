@@ -1,13 +1,6 @@
 <template>
   <div class="home">
-      <div class="menu-section">
-        <div><img src="../assets/images/bullet-icon.png"/><v-btn to="/new-game" class="menu">New Game</v-btn></div>
-        <div><img src="../assets/images/bullet-icon.png"/><v-btn to="/change-environment" class="menu">Change Environment</v-btn></div>
-        <div><img src="../assets/images/bullet-icon.png"/><v-btn to="/change-character" class="menu">Change Character</v-btn></div>
-        <div><img src="../assets/images/bullet-icon.png"/><v-btn to="/change-background" class="menu">Change Background</v-btn></div>
-        <div><img src="../assets/images/bullet-icon.png"/><v-btn to="/high-score" class="menu">Highest Score</v-btn></div>
-        <div><img src="../assets/images/bullet-icon.png"/><v-btn to="/exit" class="menu">Exit</v-btn></div>
-      </div>
+    <h1>Home</h1>
   </div>
 </template>
 
