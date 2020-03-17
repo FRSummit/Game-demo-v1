@@ -8,6 +8,7 @@
 
       <div class="menu-section">
         <v-btn to="/" class="menu"><span>Home</span></v-btn>
+        <v-btn to="/portfolio" class="menu"><span>Portfolio</span></v-btn>
         <v-btn to="/about" class="menu"><span>About</span></v-btn>
         <v-btn to="/game" class="menu"><span>Game</span></v-btn>
       </div>

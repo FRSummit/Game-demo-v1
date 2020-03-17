@@ -1,24 +1,27 @@
 <template>
     <div class="main-section">
         <div class="score-section">
+            <p>HIGH SCORE</p>
             <table>
-                <tr>
-                    <th>Position</th>
-                    <th>Name</th>
-                    <th>Score</th>
-                </tr>
-                
-                <tr>
-                    <th>First</th>
-                    <th>Some name</th>
-                    <th>1000</th>
-                </tr>
-                
-                <tr>
-                    <th>Second</th>
-                    <th>No Name</th>
-                    <th>100</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <td>Position</td>
+                        <td>Score</td>
+                        <td>Name</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1st</td>
+                        <td>10000000</td>
+                        <td>CMK</td>
+                    </tr>
+                    <tr>
+                        <td>2st</td>
+                        <td>1000000</td>
+                        <td>KMC</td>
+                    </tr>
+                </tbody>
             </table> 
         </div>
              
@@ -26,11 +29,24 @@
 </template>
 
 <style scoped>
- .score-section{
-     width: 50%;
-    margin: 0 auto;
- }
- .table{
-     width: 100%;
- }
+.score-section {
+  width: 50%;
+  margin: 2% auto 0;
+}
+.score-section p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+table {
+  width: 100%;
+  background: #ada7a7;
+}
+thead td {
+    font-size: 18px;
+    padding: 6px 0;
+}
+td {
+    text-align: center;
+}
 </style>
