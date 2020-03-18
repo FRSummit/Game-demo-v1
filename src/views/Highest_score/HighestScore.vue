@@ -17,7 +17,7 @@
                         <td>CMK</td>
                     </tr>
                     <tr>
-                        <td>2st</td>
+                        <td>2nd</td>
                         <td>1000000</td>
                         <td>KMC</td>
                     </tr>
@@ -41,6 +41,8 @@
 table {
   width: 100%;
   background: #ada7a7;
+  cursor: pointer;
+  color: blue;
 }
 thead td {
     font-size: 18px;
@@ -48,5 +50,8 @@ thead td {
 }
 td {
     text-align: center;
+}
+p {
+    color: aqua;
 }
 </style>
