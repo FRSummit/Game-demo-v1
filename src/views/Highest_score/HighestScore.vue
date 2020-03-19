@@ -1,7 +1,7 @@
 <template>
     <div class="main-section">
         <div class="score-section">
-            <p>HIGH SCORE</p>
+            <p>HIGHSCORES</p>
             <table>
                 <thead>
                     <tr>
@@ -20,6 +20,36 @@
                         <td>2nd</td>
                         <td>1000000</td>
                         <td>KMC</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3rd</td>
+                        <td>10000</td>
+                        <td>RMC</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>4th</td>
+                        <td>1000</td>
+                        <td>MMC</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>5th</td>
+                        <td>100</td>
+                        <td>VMC</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>6th</td>
+                        <td>050</td>
+                        <td>SMC</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>7th</td>
+                        <td>030</td>
+                        <td>OMC</td>
                     </tr>
                 </tbody>
             </table> 
