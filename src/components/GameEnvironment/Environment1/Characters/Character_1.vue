@@ -36,7 +36,6 @@ export default {
             // console.log(document.querySelector('.char1').getBoundingClientRect())
             // // let charPosition_X = $(window).height() - $('.char1').height();
             // console.log(String.fromCharCode(e.keyCode));
-// test
 
             if(String.fromCharCode(e.keyCode) === 'W' || String.fromCharCode(e.keyCode) === 'w') {
                 console.log('I am W/w')
@@ -46,8 +45,8 @@ export default {
                 // console.log('I am S')
                 document.querySelector('.character-1').style.bottom += 200 + 'px'
             }
-        }
-        
+        },
+        test() {}
     }
 }
 </script>
