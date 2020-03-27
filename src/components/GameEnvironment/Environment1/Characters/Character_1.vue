@@ -38,7 +38,7 @@ export default {
             // console.log(String.fromCharCode(e.keyCode));
 
             if(String.fromCharCode(e.keyCode) === 'W' || String.fromCharCode(e.keyCode) === 'w') {
-                // console.log('I am W/w')
+                console.log('I am W/w')
                 document.querySelector('.character-1').style.bottom += 100 + 'px'
             }
             if(String.fromCharCode(e.keyCode) === 'S' || String.fromCharCode(e.keyCode) === 's') {
