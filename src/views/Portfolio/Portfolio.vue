@@ -14,8 +14,45 @@
                     <li class=""><a href="#" data-nav-section="contact">Contact</a></li>
                 </ul>
             </div>
+            <div class="description-section">
+                <p>hhfdhfdfhdjhhhdfjhfkueihfab</p>
+            </div>
         </nav>
    </div>
 </template>
+
+<style scoped>
+ul {
+    padding-top: 3em;
+    padding-bottom: 40px;
+    float: left;
+    width: 300px;
+    position: fixed;
+    overflow-y: scroll;
+    z-index: 1001;
+    background: #ecedf1;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    height: 564px;
+}
+li {
+    color: rgba(0,0,0,.7);
+    text-decoration: none;
+    position: relative;
+    padding: 10px 0;
+    font-family: quicksand,Arial,sans-serif;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.navbar {
+    display: inline block;
+}
+.description-section {
+    display: inline-block;
+    float: right;
+}
+</style>
 
     
